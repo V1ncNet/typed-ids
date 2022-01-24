@@ -2,6 +2,7 @@ package de.vinado.library.identifier.uuid;
 
 import de.vinado.library.identifier.Identifier;
 
+import java.util.Objects;
 import java.util.UUID;
 
 /**
@@ -13,5 +14,10 @@ public class UuidIdentifier extends Identifier<UUID> {
 
     protected UuidIdentifier(UUID value) {
         super(value);
+    }
+
+    @Override
+    public final int compareTo(Identifier<UUID> other) {
+        return Objects.compare(getValue(), other.getValue(), UUID::compareTo);
     }
 }

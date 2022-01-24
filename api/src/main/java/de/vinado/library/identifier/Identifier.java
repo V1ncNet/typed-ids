@@ -14,7 +14,7 @@ import lombok.RequiredArgsConstructor;
  */
 @Getter
 @RequiredArgsConstructor(access = AccessLevel.PROTECTED)
-public abstract class Identifier<T> {
+public abstract class Identifier<T> implements Comparable<Identifier<T>> {
 
     private final T value;
 
