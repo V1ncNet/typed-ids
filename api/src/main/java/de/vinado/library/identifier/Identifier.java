@@ -2,6 +2,7 @@ package de.vinado.library.identifier;
 
 import lombok.AccessLevel;
 import lombok.Getter;
+import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 
 /**
@@ -16,6 +17,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor(access = AccessLevel.PROTECTED)
 public abstract class Identifier<T> implements Comparable<Identifier<T>> {
 
+    @NonNull
     private final T value;
 
     @Override
