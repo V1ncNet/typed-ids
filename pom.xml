@@ -19,6 +19,7 @@
 
     <modules>
         <module>api</module>
+        <module>jackson</module>
     </modules>
 
     <properties>
@@ -48,6 +49,11 @@
             <dependency>
                 <groupId>de.vinado.library</groupId>
                 <artifactId>identifier-api</artifactId>
+                <version>${identifier.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.vinado.library</groupId>
+                <artifactId>identifier-jackson</artifactId>
                 <version>${identifier.version}</version>
             </dependency>
         </dependencies>
