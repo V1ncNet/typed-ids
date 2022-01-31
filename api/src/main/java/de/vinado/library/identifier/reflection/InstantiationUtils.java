@@ -11,9 +11,9 @@ import java.lang.reflect.Modifier;
  *
  * @author Vincent Nadoll
  */
-public final class ReflectionUtils {
+public final class InstantiationUtils {
 
-    private ReflectionUtils() {
+    private InstantiationUtils() {
         throw new UnsupportedOperationException("Utility class may not be instantiated");
     }
 

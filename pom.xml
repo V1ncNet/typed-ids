@@ -20,6 +20,7 @@
     <modules>
         <module>api</module>
         <module>jackson</module>
+        <module>spring</module>
     </modules>
 
     <properties>
@@ -54,6 +55,11 @@
             <dependency>
                 <groupId>de.vinado.library</groupId>
                 <artifactId>identifier-jackson</artifactId>
+                <version>${identifier.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.vinado.spring</groupId>
+                <artifactId>identifier</artifactId>
                 <version>${identifier.version}</version>
             </dependency>
         </dependencies>

@@ -11,14 +11,14 @@ import org.junit.jupiter.params.provider.MethodSource;
 import java.lang.reflect.Constructor;
 import java.util.UUID;
 
-import static de.vinado.library.identifier.reflection.ReflectionUtils.instantiate;
+import static de.vinado.library.identifier.reflection.InstantiationUtils.instantiate;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 /**
  * @author Vincent Nadoll
  */
-class ReflectionUtilsTest {
+class InstantiationUtilsTest {
 
     @Test
     void instantiatingFixedValueIdentifier_shouldThrowException() throws NoSuchMethodException {
