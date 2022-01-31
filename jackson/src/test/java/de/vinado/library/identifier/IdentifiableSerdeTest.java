@@ -2,7 +2,7 @@ package de.vinado.library.identifier;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import de.vinado.library.identifier.string.StringIdentifier;
+import de.vinado.library.identifier.basic.StringIdentifier;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

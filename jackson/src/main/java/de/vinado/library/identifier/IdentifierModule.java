@@ -3,10 +3,10 @@ package de.vinado.library.identifier;
 import com.fasterxml.jackson.core.Version;
 import com.fasterxml.jackson.core.util.VersionUtil;
 import com.fasterxml.jackson.databind.module.SimpleModule;
-import de.vinado.library.identifier.string.StringIdentifier;
-import de.vinado.library.identifier.string.StringIdentifierDeserializer;
-import de.vinado.library.identifier.uuid.UuidIdentifier;
-import de.vinado.library.identifier.uuid.UuidIdentifierDeserializer;
+import de.vinado.library.identifier.basic.StringIdentifier;
+import de.vinado.library.identifier.basic.StringIdentifierDeserializer;
+import de.vinado.library.identifier.basic.UuidIdentifier;
+import de.vinado.library.identifier.basic.UuidIdentifierDeserializer;
 
 /**
  * {@link com.fasterxml.jackson.databind.Module} registering {@link com.fasterxml.jackson.databind.JsonSerializer}s and

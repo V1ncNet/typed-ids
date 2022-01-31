@@ -1,8 +1,9 @@
-package de.vinado.library.identifier.string;
+package de.vinado.library.identifier.basic;
 
 import de.vinado.library.identifier.AbstractIdentifierSerializationTest;
 import de.vinado.library.identifier.Identifier;
 import de.vinado.library.identifier.IdentifierFactory;
+import de.vinado.library.identifier.basic.StringIdentifier;
 
 /**
  * @author Vincent Nadoll

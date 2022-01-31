@@ -1,4 +1,4 @@
-package de.vinado.library.identifier.string;
+package de.vinado.library.identifier.basic;
 
 import de.vinado.library.identifier.reflection.IdentifierInstantiationException;
 import de.vinado.library.identifier.reflection.InstantiationUtils;

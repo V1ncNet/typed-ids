@@ -1,8 +1,8 @@
 package de.vinado.library.identifier.reflection;
 
 import de.vinado.library.identifier.Identifier;
-import de.vinado.library.identifier.string.StringIdentifier;
-import de.vinado.library.identifier.uuid.UuidIdentifier;
+import de.vinado.library.identifier.basic.StringIdentifier;
+import de.vinado.library.identifier.basic.UuidIdentifier;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
