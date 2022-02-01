@@ -13,6 +13,10 @@
     <groupId>de.vinado.spring</groupId>
     <artifactId>identifier</artifactId>
 
+    <name>Identifier Spring Converters</name>
+    <description>Provides Spring converters for strong typed identifiers</description>
+    <url>https://github.com/V1ncNet/typed-ids.git</url>
+
     <dependencies>
         <dependency>
             <groupId>de.vinado.library</groupId>

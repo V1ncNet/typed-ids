@@ -12,6 +12,10 @@
 
     <artifactId>identifier-api</artifactId>
 
+    <name>Identifier API</name>
+    <description>An API providing base functionalities for strong typed identifiers</description>
+    <url>https://github.com/V1ncNet/typed-ids.git</url>
+
     <dependencies>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>

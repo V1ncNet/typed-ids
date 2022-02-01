@@ -13,6 +13,10 @@
     <groupId>de.vinado.boot</groupId>
     <artifactId>identifier-spring-boot-autoconfigure</artifactId>
 
+    <name>Spring Boot Identifier Auto-Configuration</name>
+    <description>Configures the individual identifier library modules automagically</description>
+    <url>https://github.com/V1ncNet/typed-ids.git</url>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>

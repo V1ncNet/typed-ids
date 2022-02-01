@@ -12,6 +12,10 @@
 
     <artifactId>identifier-jackson</artifactId>
 
+    <name>Identifier Jackson</name>
+    <description>Provides Jackson JSON (De-)Serializers for strong typed identifiers</description>
+    <url>https://github.com/V1ncNet/typed-ids.git</url>
+
     <dependencies>
         <dependency>
             <groupId>de.vinado.library</groupId>

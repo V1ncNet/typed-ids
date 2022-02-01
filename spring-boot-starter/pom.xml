@@ -13,6 +13,10 @@
     <groupId>de.vinado.boot</groupId>
     <artifactId>identifier-spring-boot-starter</artifactId>
 
+    <name>Spring Boot Identifier Starter</name>
+    <description>Starter for using strong typed identifiers, an optional Jackson and converter integration</description>
+    <url>https://github.com/V1ncNet/typed-ids.git</url>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
