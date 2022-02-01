@@ -1,4 +1,4 @@
-package de.vinado.library.identifier.basic;
+package de.vinado.spring.identifier.convert;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -7,8 +7,8 @@ import org.springframework.core.convert.TypeDescriptor;
 
 import java.util.UUID;
 
-import static de.vinado.library.identifier.basic.StringIdentifierConverter.IDENTIFIER_TYPE;
-import static de.vinado.library.identifier.basic.StringIdentifierConverter.STRING_TYPE;
+import static de.vinado.spring.identifier.convert.StringIdentifierConverter.IDENTIFIER_TYPE;
+import static de.vinado.spring.identifier.convert.StringIdentifierConverter.STRING_TYPE;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;

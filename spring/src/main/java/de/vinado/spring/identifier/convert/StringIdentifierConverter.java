@@ -1,5 +1,6 @@
-package de.vinado.library.identifier.basic;
+package de.vinado.spring.identifier.convert;
 
+import de.vinado.library.identifier.basic.StringIdentifier;
 import de.vinado.library.identifier.reflection.IdentifierInstantiationException;
 import de.vinado.library.identifier.reflection.InstantiationUtils;
 import org.springframework.core.convert.ConversionFailedException;
