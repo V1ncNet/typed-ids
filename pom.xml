@@ -21,6 +21,8 @@
         <module>api</module>
         <module>jackson</module>
         <module>spring</module>
+        <module>spring-boot-autoconfigure</module>
+        <module>spring-boot-starter</module>
     </modules>
 
     <properties>
@@ -60,6 +62,11 @@
             <dependency>
                 <groupId>de.vinado.spring</groupId>
                 <artifactId>identifier</artifactId>
+                <version>${identifier.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.vinado.boot</groupId>
+                <artifactId>identifier-spring-boot-autoconfigure</artifactId>
                 <version>${identifier.version}</version>
             </dependency>
         </dependencies>
