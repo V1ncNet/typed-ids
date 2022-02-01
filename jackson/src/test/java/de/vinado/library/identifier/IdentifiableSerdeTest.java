@@ -2,6 +2,7 @@ package de.vinado.library.identifier;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import de.vinado.library.identifier.basic.StringIdentifiable;
 import de.vinado.library.identifier.basic.StringIdentifier;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -26,8 +27,8 @@ class IdentifiableSerdeTest {
 
     @Test
     void serializingIdentifiable_shouldContainIdentifierAsId() throws JsonProcessingException {
-        Identifiable.Id identifier = new Identifiable.Id("foo");
-        Identifiable identifiable = new Identifiable(identifier);
+        DefaultIdentifiable.Id identifier = new DefaultIdentifiable.Id("foo");
+        DefaultIdentifiable identifiable = new DefaultIdentifiable(identifier);
 
         String json = mapper.writeValueAsString(identifiable);
 
@@ -36,15 +37,16 @@ class IdentifiableSerdeTest {
 
     @Test
     void deserializingIdentifiable_shouldMapIdFieldToIdentifier() throws JsonProcessingException {
-        Identifiable identifiable = mapper.readValue("{\"id\":\"foo\"}", Identifiable.class);
+        DefaultIdentifiable identifiable = mapper.readValue("{\"id\":\"foo\"}", DefaultIdentifiable.class);
 
         assertEquals("foo", identifiable.getId().toString());
     }
 
+
     @Data
     @NoArgsConstructor
     @AllArgsConstructor
-    private static class Identifiable {
+    private static class DefaultIdentifiable implements StringIdentifiable<DefaultIdentifiable.Id> {
 
         private Id id;
 

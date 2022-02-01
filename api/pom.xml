@@ -12,4 +12,11 @@
 
     <artifactId>identifier-api</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
 </project>
