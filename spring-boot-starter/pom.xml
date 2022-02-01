@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <artifactId>identifier</artifactId>
+        <artifactId>identifier-parent</artifactId>
         <groupId>de.vinado.library</groupId>
         <version>0.1.0-SNAPSHOT</version>
     </parent>
