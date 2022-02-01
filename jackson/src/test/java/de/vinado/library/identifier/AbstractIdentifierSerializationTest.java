@@ -2,7 +2,6 @@ package de.vinado.library.identifier;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import de.vinado.library.identifier.Identifier;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -30,6 +29,10 @@ public abstract class AbstractIdentifierSerializationTest<T> {
         Identifier<T> identifier = create(createValue());
         String json = mapper.writeValueAsString(identifier);
 
+        assertValueEquals(json);
+    }
+
+    protected void assertValueEquals(String json) {
         assertEquals("\"" + createValue() + "\"", json);
     }
 }

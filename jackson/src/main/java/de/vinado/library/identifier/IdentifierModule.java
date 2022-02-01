@@ -3,6 +3,8 @@ package de.vinado.library.identifier;
 import com.fasterxml.jackson.core.Version;
 import com.fasterxml.jackson.core.util.VersionUtil;
 import com.fasterxml.jackson.databind.module.SimpleModule;
+import de.vinado.library.identifier.basic.NumericIdentifier;
+import de.vinado.library.identifier.basic.NumericIdentifierDeserializer;
 import de.vinado.library.identifier.basic.StringIdentifier;
 import de.vinado.library.identifier.basic.StringIdentifierDeserializer;
 import de.vinado.library.identifier.basic.UuidIdentifier;
@@ -26,6 +28,7 @@ public class IdentifierModule extends SimpleModule {
     public IdentifierModule() {
         super(VERSION);
 
+        addDeserializer(NumericIdentifier.class, new NumericIdentifierDeserializer<>());
         addDeserializer(StringIdentifier.class, new StringIdentifierDeserializer<>());
         addDeserializer(UuidIdentifier.class, new UuidIdentifierDeserializer<>());
 
