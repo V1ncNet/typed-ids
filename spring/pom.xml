@@ -11,7 +11,7 @@
     </parent>
 
     <groupId>de.vinado.spring</groupId>
-    <artifactId>identifier</artifactId>
+    <artifactId>identifier-convert</artifactId>
 
     <name>Identifier Spring Converters</name>
     <description>Provides Spring converters for strong typed identifiers</description>

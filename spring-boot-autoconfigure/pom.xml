@@ -38,7 +38,7 @@
         </dependency>
         <dependency>
             <groupId>de.vinado.spring</groupId>
-            <artifactId>identifier</artifactId>
+            <artifactId>identifier-convert</artifactId>
         </dependency>
         <dependency>
             <groupId>de.vinado.library</groupId>
