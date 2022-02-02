@@ -12,7 +12,7 @@ import java.io.IOException;
  * @author Vincent Nadoll
  */
 @SuppressWarnings("rawtypes")
-public class IdentifierSerializer extends JsonSerializer<Identifier> {
+public class IdentifierJacksonSerializer extends JsonSerializer<Identifier> {
 
     @Override
     public void serialize(Identifier identifier, JsonGenerator gen, SerializerProvider provider) throws IOException {

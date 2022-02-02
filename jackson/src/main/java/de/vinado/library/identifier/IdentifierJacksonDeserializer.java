@@ -17,7 +17,7 @@ import java.io.IOException;
  * @author Vincent Nadoll
  */
 @RequiredArgsConstructor
-public abstract class IdentifierDeserializer<T, R extends Identifier<T>> extends JsonDeserializer<R> {
+public abstract class IdentifierJacksonDeserializer<T, R extends Identifier<T>> extends JsonDeserializer<R> {
 
     private final IdentifierFactory<T, R> factory;
 

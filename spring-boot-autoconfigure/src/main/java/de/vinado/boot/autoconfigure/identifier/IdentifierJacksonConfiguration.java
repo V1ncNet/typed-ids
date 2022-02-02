@@ -1,7 +1,7 @@
 package de.vinado.boot.autoconfigure.identifier;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import de.vinado.library.identifier.IdentifierModule;
+import de.vinado.library.identifier.IdentifierJacksonModule;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.jackson.Jackson2ObjectMapperBuilderCustomizer;
@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;
 
 /**
- * Configures the {@link IdentifierModule} for Jackson (de-)serialization.
+ * Configures the {@link IdentifierJacksonModule} for Jackson (de-)serialization.
  *
  * @author Vincent Nadoll
  */
@@ -19,8 +19,8 @@ import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;
 public class IdentifierJacksonConfiguration {
 
     @Bean
-    IdentifierModule identifierModule() {
-        return new IdentifierModule();
+    IdentifierJacksonModule identifierModule() {
+        return new IdentifierJacksonModule();
     }
 
 
@@ -30,7 +30,7 @@ public class IdentifierJacksonConfiguration {
 
         @Bean
         IdentifierJackson2ObjectMapperBuilderCustomizer identifierJackson2ObjectMapperBuilderCustomizer(
-            IdentifierModule identifierModule) {
+            IdentifierJacksonModule identifierModule) {
             return new IdentifierJackson2ObjectMapperBuilderCustomizer(identifierModule);
         }
 
@@ -38,7 +38,7 @@ public class IdentifierJacksonConfiguration {
         @RequiredArgsConstructor
         static class IdentifierJackson2ObjectMapperBuilderCustomizer implements Jackson2ObjectMapperBuilderCustomizer {
 
-            private final IdentifierModule identifierModule;
+            private final IdentifierJacksonModule identifierModule;
 
             @Override
             public void customize(Jackson2ObjectMapperBuilder builder) {

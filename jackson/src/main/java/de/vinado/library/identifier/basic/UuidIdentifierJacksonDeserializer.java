@@ -1,7 +1,7 @@
 package de.vinado.library.identifier.basic;
 
-import de.vinado.library.identifier.IdentifierDeserializer;
 import de.vinado.library.identifier.IdentifierFactory;
+import de.vinado.library.identifier.IdentifierJacksonDeserializer;
 
 import java.util.UUID;
 
@@ -11,14 +11,15 @@ import java.util.UUID;
  * @param <T> the type of the {@link UuidIdentifier}'s subtype if any
  * @author Vincent Nadoll
  */
-public class UuidIdentifierDeserializer<T extends UuidIdentifier> extends IdentifierDeserializer<UUID, T> {
+public class UuidIdentifierJacksonDeserializer<T extends UuidIdentifier>
+    extends IdentifierJacksonDeserializer<UUID, T> {
 
     @SuppressWarnings("unchecked")
-    public UuidIdentifierDeserializer() {
+    public UuidIdentifierJacksonDeserializer() {
         super(id -> (T) new UuidIdentifier(id));
     }
 
-    protected UuidIdentifierDeserializer(IdentifierFactory<UUID, T> factory) {
+    protected UuidIdentifierJacksonDeserializer(IdentifierFactory<UUID, T> factory) {
         super(factory);
     }
 
