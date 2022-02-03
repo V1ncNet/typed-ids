@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>identifier-parent</artifactId>
+        <groupId>de.vinado.library</groupId>
+        <version>1.0.0</version>
+    </parent>
+
+    <groupId>de.vinado.spring</groupId>
+    <artifactId>identifier-convert</artifactId>
+
+    <name>Identifier Spring Converters</name>
+    <description>Provides Spring converters for strong typed identifiers</description>
+    <url>https://github.com/V1ncNet/typed-ids.git</url>
+
+    <dependencies>
+        <dependency>
+            <groupId>de.vinado.library</groupId>
+            <artifactId>identifier-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-commons</artifactId>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
+</project>
