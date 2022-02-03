@@ -12,7 +12,7 @@ import java.util.UUID;
  */
 public class UuidIdentifier extends Identifier<UUID> {
 
-    protected UuidIdentifier(UUID value) {
+    public UuidIdentifier(UUID value) {
         super(value);
     }
 

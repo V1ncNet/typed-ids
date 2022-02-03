@@ -11,11 +11,11 @@ import java.util.Objects;
  */
 public class NumericIdentifier extends Identifier<Long> {
 
-    protected NumericIdentifier(long value) {
+    public NumericIdentifier(long value) {
         super(value);
     }
 
-    protected NumericIdentifier(Long value) {
+    public NumericIdentifier(Long value) {
         super(value);
     }
 

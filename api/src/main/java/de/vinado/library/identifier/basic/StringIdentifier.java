@@ -11,7 +11,7 @@ import java.util.Objects;
  */
 public class StringIdentifier extends Identifier<String> {
 
-    protected StringIdentifier(String value) {
+    public StringIdentifier(String value) {
         super(value);
     }
 
