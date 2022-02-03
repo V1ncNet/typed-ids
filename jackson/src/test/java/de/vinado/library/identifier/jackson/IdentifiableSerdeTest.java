@@ -52,6 +52,8 @@ class IdentifiableSerdeTest {
 
         private static final class Id extends StringIdentifier {
 
+            private static final long serialVersionUID = 8853764053141656003L;
+
             Id(String value) {
                 super(value);
             }

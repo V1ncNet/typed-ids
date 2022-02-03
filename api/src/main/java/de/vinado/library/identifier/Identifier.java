@@ -5,6 +5,8 @@ import lombok.Getter;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 
+import java.io.Serializable;
+
 /**
  * A generic value-wrapping value object which proxies all defined methods to its encapsulated instance. The VO mainly
  * exist to enforce strictly typed identifiers in domain entities reducing the misuse of ID based query functions by
@@ -15,7 +17,9 @@ import lombok.RequiredArgsConstructor;
  */
 @Getter
 @RequiredArgsConstructor(access = AccessLevel.PROTECTED)
-public abstract class Identifier<T> implements Comparable<Identifier<T>> {
+public abstract class Identifier<T> implements Comparable<Identifier<T>>, Serializable {
+
+    private static final long serialVersionUID = -8801628017632098234L;
 
     @NonNull
     private final T value;

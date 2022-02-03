@@ -11,6 +11,8 @@ import java.util.Objects;
  */
 public class NumericIdentifier extends Identifier<Long> {
 
+    private static final long serialVersionUID = 2164251350343603266L;
+
     public NumericIdentifier(long value) {
         super(value);
     }

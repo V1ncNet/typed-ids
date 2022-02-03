@@ -73,6 +73,8 @@ class InstantiationUtilsTest {
 
     private static abstract class AbstractStringIdentifier extends Identifier<String> {
 
+        private static final long serialVersionUID = 3110357809026800341L;
+
         public AbstractStringIdentifier(String value) {
             super(value);
         }
@@ -80,6 +82,8 @@ class InstantiationUtilsTest {
 
 
     private static class ConstrainedIdentifier extends StringIdentifier {
+
+        private static final long serialVersionUID = -6529056253687320049L;
 
         public ConstrainedIdentifier(String value) {
             super(nonNumeric(value));
@@ -97,6 +101,8 @@ class InstantiationUtilsTest {
 
 
     private static class FixedValueIdentifier extends StringIdentifier {
+
+        private static final long serialVersionUID = -4035097647757485076L;
 
         public FixedValueIdentifier() {
             super("foo");

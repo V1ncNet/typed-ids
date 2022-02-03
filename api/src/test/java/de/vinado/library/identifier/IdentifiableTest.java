@@ -67,6 +67,8 @@ class IdentifiableTest {
 
     static final class Id extends StringIdentifier {
 
+        private static final long serialVersionUID = 7445742356147366291L;
+
         Id(String value) {
             super(value);
         }

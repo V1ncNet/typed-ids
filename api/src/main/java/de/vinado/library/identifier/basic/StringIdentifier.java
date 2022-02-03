@@ -11,6 +11,8 @@ import java.util.Objects;
  */
 public class StringIdentifier extends Identifier<String> {
 
+    private static final long serialVersionUID = -5178368424490204619L;
+
     public StringIdentifier(String value) {
         super(value);
     }

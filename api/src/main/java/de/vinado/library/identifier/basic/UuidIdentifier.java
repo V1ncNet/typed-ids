@@ -12,6 +12,8 @@ import java.util.UUID;
  */
 public class UuidIdentifier extends Identifier<UUID> {
 
+    private static final long serialVersionUID = -6479421329720973274L;
+
     public UuidIdentifier(UUID value) {
         super(value);
     }
