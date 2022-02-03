@@ -1,8 +1,9 @@
-package de.vinado.library.identifier.basic;
+package de.vinado.library.identifier.jackson.basic;
 
-import de.vinado.library.identifier.AbstractIdentifierSerializationTest;
 import de.vinado.library.identifier.Identifier;
 import de.vinado.library.identifier.IdentifierFactory;
+import de.vinado.library.identifier.basic.NumericIdentifier;
+import de.vinado.library.identifier.jackson.AbstractIdentifierSerializationTest;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

@@ -1,9 +1,11 @@
-package de.vinado.library.identifier;
+package de.vinado.library.identifier.jackson;
 
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.DeserializationContext;
 import com.fasterxml.jackson.databind.JsonDeserializer;
 import com.fasterxml.jackson.databind.JsonNode;
+import de.vinado.library.identifier.Identifier;
+import de.vinado.library.identifier.IdentifierFactory;
 import lombok.RequiredArgsConstructor;
 
 import java.io.IOException;
@@ -17,7 +19,7 @@ import java.io.IOException;
  * @author Vincent Nadoll
  */
 @RequiredArgsConstructor
-public abstract class IdentifierJacksonDeserializer<T, R extends Identifier<T>> extends JsonDeserializer<R> {
+public abstract class IdentifierDeserializer<T, R extends Identifier<T>> extends JsonDeserializer<R> {
 
     private final IdentifierFactory<T, R> factory;
 

@@ -1,7 +1,8 @@
-package de.vinado.library.identifier;
+package de.vinado.library.identifier.jackson;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.exc.InvalidDefinitionException;
+import de.vinado.library.identifier.Identifier;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 

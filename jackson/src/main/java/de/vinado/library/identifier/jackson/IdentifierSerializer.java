@@ -1,8 +1,9 @@
-package de.vinado.library.identifier;
+package de.vinado.library.identifier.jackson;
 
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.JsonSerializer;
 import com.fasterxml.jackson.databind.SerializerProvider;
+import de.vinado.library.identifier.Identifier;
 
 import java.io.IOException;
 
@@ -12,7 +13,7 @@ import java.io.IOException;
  * @author Vincent Nadoll
  */
 @SuppressWarnings("rawtypes")
-public class IdentifierJacksonSerializer extends JsonSerializer<Identifier> {
+public class IdentifierSerializer extends JsonSerializer<Identifier> {
 
     @Override
     public void serialize(Identifier identifier, JsonGenerator gen, SerializerProvider provider) throws IOException {

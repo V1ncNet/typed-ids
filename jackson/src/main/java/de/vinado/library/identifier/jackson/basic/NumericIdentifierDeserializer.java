@@ -1,7 +1,8 @@
-package de.vinado.library.identifier.basic;
+package de.vinado.library.identifier.jackson.basic;
 
 import de.vinado.library.identifier.IdentifierFactory;
-import de.vinado.library.identifier.IdentifierJacksonDeserializer;
+import de.vinado.library.identifier.basic.NumericIdentifier;
+import de.vinado.library.identifier.jackson.IdentifierDeserializer;
 
 /**
  * {@link Long}-based application identifier VO.
@@ -9,15 +10,14 @@ import de.vinado.library.identifier.IdentifierJacksonDeserializer;
  * @param <T> the type of the {@link NumericIdentifier}'s subtype if any
  * @author Vincent Nadoll
  */
-public class NumericIdentifierJacksonDeserializer<T extends NumericIdentifier>
-    extends IdentifierJacksonDeserializer<Long, T> {
+public class NumericIdentifierDeserializer<T extends NumericIdentifier> extends IdentifierDeserializer<Long, T> {
 
     @SuppressWarnings("unchecked")
-    public NumericIdentifierJacksonDeserializer() {
+    public NumericIdentifierDeserializer() {
         super(id -> (T) new NumericIdentifier(id));
     }
 
-    protected NumericIdentifierJacksonDeserializer(IdentifierFactory<Long, T> factory) {
+    protected NumericIdentifierDeserializer(IdentifierFactory<Long, T> factory) {
         super(factory);
     }
 

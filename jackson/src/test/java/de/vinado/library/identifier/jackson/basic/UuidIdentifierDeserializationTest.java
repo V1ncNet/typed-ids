@@ -1,8 +1,8 @@
-package de.vinado.library.identifier.basic;
+package de.vinado.library.identifier.jackson.basic;
 
-import de.vinado.library.identifier.AbstractIdentifierDeserializationTest;
 import de.vinado.library.identifier.Identifier;
 import de.vinado.library.identifier.basic.UuidIdentifier;
+import de.vinado.library.identifier.jackson.AbstractIdentifierDeserializationTest;
 
 /**
  * @author Vincent Nadoll

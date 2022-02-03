@@ -1,4 +1,4 @@
-package de.vinado.library.identifier;
+package de.vinado.library.identifier.jackson;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

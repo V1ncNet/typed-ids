@@ -1,7 +1,8 @@
-package de.vinado.library.identifier.basic;
+package de.vinado.library.identifier.jackson.basic;
 
 import de.vinado.library.identifier.IdentifierFactory;
-import de.vinado.library.identifier.IdentifierJacksonDeserializer;
+import de.vinado.library.identifier.basic.StringIdentifier;
+import de.vinado.library.identifier.jackson.IdentifierDeserializer;
 
 /**
  * {@link String}-based application identifier VO.
@@ -9,15 +10,14 @@ import de.vinado.library.identifier.IdentifierJacksonDeserializer;
  * @param <T> the type of the {@link StringIdentifier}'s subtype if any
  * @author Vincent Nadoll
  */
-public class StringIdentifierJacksonDeserializer<T extends StringIdentifier>
-    extends IdentifierJacksonDeserializer<String, T> {
+public class StringIdentifierDeserializer<T extends StringIdentifier> extends IdentifierDeserializer<String, T> {
 
     @SuppressWarnings("unchecked")
-    public StringIdentifierJacksonDeserializer() {
+    public StringIdentifierDeserializer() {
         super(id -> (T) new StringIdentifier(id));
     }
 
-    protected StringIdentifierJacksonDeserializer(IdentifierFactory<String, T> factory) {
+    protected StringIdentifierDeserializer(IdentifierFactory<String, T> factory) {
         super(factory);
     }
 
