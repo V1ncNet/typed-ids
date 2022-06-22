@@ -20,7 +20,7 @@ import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;
 public class IdentifierJacksonConfiguration {
 
     @Bean
-    IdentifierModule identifierModule() {
+    public IdentifierModule identifierModule() {
         return new IdentifierModule();
     }
 
