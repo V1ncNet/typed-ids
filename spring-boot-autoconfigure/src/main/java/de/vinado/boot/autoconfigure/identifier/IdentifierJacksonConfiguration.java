@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.jackson.Jackson2ObjectMapperBuilderCustomizer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.Ordered;
 import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;
 
 /**
@@ -36,13 +37,19 @@ public class IdentifierJacksonConfiguration {
 
 
         @RequiredArgsConstructor
-        static class IdentifierJackson2ObjectMapperBuilderCustomizer implements Jackson2ObjectMapperBuilderCustomizer {
+        static class IdentifierJackson2ObjectMapperBuilderCustomizer
+            implements Jackson2ObjectMapperBuilderCustomizer, Ordered {
 
             private final IdentifierModule identifierModule;
 
             @Override
             public void customize(Jackson2ObjectMapperBuilder builder) {
                 builder.modulesToInstall(identifierModule);
+            }
+
+            @Override
+            public int getOrder() {
+                return -1;
             }
         }
     }
