@@ -33,14 +33,16 @@ class InstantiationUtilsTest {
 
     @Test
     void instantiatingConstrained_shouldThrowException() throws NoSuchMethodException {
-        Constructor<ConstrainedIdentifier> constructor = ConstrainedIdentifier.class.getDeclaredConstructor(String.class);
+        Constructor<ConstrainedIdentifier> constructor =
+            ConstrainedIdentifier.class.getDeclaredConstructor(String.class);
 
         assertThrows(IdentifierInstantiationException.class, () -> instantiate(constructor, "1"));
     }
 
     @Test
     void instantiatingIdentifier_shouldThrowException() throws NoSuchMethodException {
-        Constructor<AbstractStringIdentifier> constructor = AbstractStringIdentifier.class.getDeclaredConstructor(String.class);
+        Constructor<AbstractStringIdentifier> constructor =
+            AbstractStringIdentifier.class.getDeclaredConstructor(String.class);
 
         assertThrows(IdentifierInstantiationException.class, () -> instantiate(constructor, "foo"));
     }

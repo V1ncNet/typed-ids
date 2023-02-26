@@ -35,7 +35,8 @@ class StringIdentifierConverterTest {
 
     @Test
     void convertingUnknownType_shouldThrowException() {
-        assertThrows(ConverterNotFoundException.class, () -> converter.convert("foo", TypeDescriptor.valueOf(UUID.class), IDENTIFIER_TYPE));
+        assertThrows(ConverterNotFoundException.class, () ->
+            converter.convert("foo", TypeDescriptor.valueOf(UUID.class), IDENTIFIER_TYPE));
     }
 
     @Test

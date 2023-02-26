@@ -36,7 +36,8 @@ class NumericIdentifierConverterTest {
     @ParameterizedTest
     @MethodSource("types")
     void convertingIncompatibleSource_shouldThrowException(TypeDescriptor sourceType, TypeDescriptor targetType) {
-        assertThrows(ConverterNotFoundException.class, () -> converter.convert(UUID.randomUUID(), sourceType, targetType));
+        assertThrows(ConverterNotFoundException.class, () ->
+            converter.convert(UUID.randomUUID(), sourceType, targetType));
     }
 
     @ParameterizedTest
