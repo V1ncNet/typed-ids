@@ -70,7 +70,7 @@ class InstantiationUtilsTest {
     }
 
 
-    private static abstract class AbstractStringIdentifier extends Identifier<String> {
+    private abstract static class AbstractStringIdentifier extends Identifier<String> {
 
         private static final long serialVersionUID = 3110357809026800341L;
 
