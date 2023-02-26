@@ -52,6 +52,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <skipCheckstyle>false</skipCheckstyle>
 
+        <dependency.checkstyle.version>10.7.0</dependency.checkstyle.version>
         <dependency.identifier.version>1.1.0-SNAPSHOT</dependency.identifier.version>
         <dependency.spring-boot.version>3.0.0</dependency.spring-boot.version>
 
@@ -214,7 +215,7 @@
                         <dependency>
                             <groupId>com.puppycrawl.tools</groupId>
                             <artifactId>checkstyle</artifactId>
-                            <version>10.7.0</version>
+                            <version>${dependency.checkstyle.version}</version>
                         </dependency>
                     </dependencies>
                 </plugin>
