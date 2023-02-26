@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 
+import java.io.Serial;
 import java.io.Serializable;
 
 /**
@@ -19,6 +20,7 @@ import java.io.Serializable;
 @RequiredArgsConstructor(access = AccessLevel.PROTECTED)
 public abstract class Identifier<T> implements Comparable<Identifier<T>>, Serializable {
 
+    @Serial
     private static final long serialVersionUID = -8801628017632098234L;
 
     @NonNull

@@ -5,6 +5,7 @@ import lombok.Value;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.io.Serial;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -64,6 +65,7 @@ class IdentifiableTest {
 
     static final class Id extends StringIdentifier {
 
+        @Serial
         private static final long serialVersionUID = 7445742356147366291L;
 
         Id(String value) {

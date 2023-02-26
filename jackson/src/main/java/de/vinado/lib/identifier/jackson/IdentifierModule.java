@@ -11,6 +11,8 @@ import de.vinado.lib.identifier.jackson.basic.NumericIdentifierDeserializer;
 import de.vinado.lib.identifier.jackson.basic.StringIdentifierDeserializer;
 import de.vinado.lib.identifier.jackson.basic.UuidIdentifierDeserializer;
 
+import java.io.Serial;
+
 /**
  * {@link com.fasterxml.jackson.databind.Module} registering {@link com.fasterxml.jackson.databind.JsonSerializer}s and
  * {@link com.fasterxml.jackson.databind.JsonDeserializer}s for reading or writing {@link Identifier} types to or from a
@@ -20,6 +22,7 @@ import de.vinado.lib.identifier.jackson.basic.UuidIdentifierDeserializer;
  */
 public class IdentifierModule extends SimpleModule {
 
+    @Serial
     private static final long serialVersionUID = -1818622609743081303L;
 
     public static final Version VERSION = VersionUtil.parseVersion(

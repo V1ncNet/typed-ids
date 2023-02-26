@@ -2,6 +2,7 @@ package de.vinado.lib.identifier.reflection;
 
 import de.vinado.lib.identifier.Identifier;
 
+import java.io.Serial;
 import java.lang.reflect.Constructor;
 
 /**
@@ -11,6 +12,7 @@ import java.lang.reflect.Constructor;
  */
 public class IdentifierInstantiationException extends RuntimeException {
 
+    @Serial
     private static final long serialVersionUID = -1204361456472885766L;
 
     public IdentifierInstantiationException(Constructor<?> constructor, String message, Throwable cause) {

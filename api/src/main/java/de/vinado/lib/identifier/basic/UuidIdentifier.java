@@ -2,6 +2,7 @@ package de.vinado.lib.identifier.basic;
 
 import de.vinado.lib.identifier.Identifier;
 
+import java.io.Serial;
 import java.util.Objects;
 import java.util.UUID;
 
@@ -12,6 +13,7 @@ import java.util.UUID;
  */
 public class UuidIdentifier extends Identifier<UUID> {
 
+    @Serial
     private static final long serialVersionUID = -6479421329720973274L;
 
     public UuidIdentifier(UUID value) {

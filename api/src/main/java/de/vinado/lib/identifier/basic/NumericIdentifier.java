@@ -2,6 +2,7 @@ package de.vinado.lib.identifier.basic;
 
 import de.vinado.lib.identifier.Identifier;
 
+import java.io.Serial;
 import java.util.Objects;
 
 /**
@@ -11,6 +12,7 @@ import java.util.Objects;
  */
 public class NumericIdentifier extends Identifier<Long> {
 
+    @Serial
     private static final long serialVersionUID = 2164251350343603266L;
 
     public NumericIdentifier(long value) {

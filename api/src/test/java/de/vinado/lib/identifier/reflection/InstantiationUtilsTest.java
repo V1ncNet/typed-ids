@@ -8,6 +8,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
+import java.io.Serial;
 import java.lang.reflect.Constructor;
 import java.util.UUID;
 
@@ -71,6 +72,7 @@ class InstantiationUtilsTest {
 
     private abstract static class AbstractStringIdentifier extends Identifier<String> {
 
+        @Serial
         private static final long serialVersionUID = 3110357809026800341L;
 
         public AbstractStringIdentifier(String value) {
@@ -81,6 +83,7 @@ class InstantiationUtilsTest {
 
     private static class ConstrainedIdentifier extends StringIdentifier {
 
+        @Serial
         private static final long serialVersionUID = -6529056253687320049L;
 
         public ConstrainedIdentifier(String value) {
@@ -100,6 +103,7 @@ class InstantiationUtilsTest {
 
     private static class FixedValueIdentifier extends StringIdentifier {
 
+        @Serial
         private static final long serialVersionUID = -4035097647757485076L;
 
         public FixedValueIdentifier() {
