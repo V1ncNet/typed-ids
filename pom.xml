@@ -52,9 +52,8 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <skipCheckstyle>false</skipCheckstyle>
 
-        <spring-boot.version>2.2.0.RELEASE</spring-boot.version>
+        <spring-boot.version>3.0.0</spring-boot.version>
         <identifier.version>1.1.0-SNAPSHOT</identifier.version>
-        <lombok.version>1.18.26</lombok.version>
 
         <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
         <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
@@ -73,12 +72,6 @@
                 <version>${spring-boot.version}</version>
                 <scope>import</scope>
                 <type>pom</type>
-            </dependency>
-
-            <dependency>
-                <groupId>org.projectlombok</groupId>
-                <artifactId>lombok</artifactId>
-                <version>${lombok.version}</version>
             </dependency>
 
             <dependency>
@@ -181,7 +174,7 @@
                 <version>${maven-javadoc-plugin.version}</version>
                 <configuration>
                     <links>
-                        <link>https://docs.spring.io/spring-framework/docs/5.2.0.RELEASE/javadoc-api/</link>
+                        <link>https://docs.spring.io/spring-framework/docs/6.0.2/javadoc-api/</link>
                     </links>
                 </configuration>
                 <executions>
