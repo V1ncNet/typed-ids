@@ -52,16 +52,16 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <skipCheckstyle>false</skipCheckstyle>
 
-        <spring-boot.version>3.0.0</spring-boot.version>
-        <identifier.version>1.1.0-SNAPSHOT</identifier.version>
+        <dependency.identifier.version>1.1.0-SNAPSHOT</dependency.identifier.version>
+        <dependency.spring-boot.version>3.0.0</dependency.spring-boot.version>
 
-        <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
-        <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
-        <maven-checkstyle-plugin.version>3.2.1</maven-checkstyle-plugin.version>
-        <maven-source-plugin.version>3.2.1</maven-source-plugin.version>
-        <maven-javadoc-plugin.version>3.5.0</maven-javadoc-plugin.version>
-        <maven-release-plugin.version>2.5.3</maven-release-plugin.version>
-        <maven-gpg-plugin.version>3.0.1</maven-gpg-plugin.version>
+        <plugin.checkstyle.version>3.2.1</plugin.checkstyle.version>
+        <plugin.compiler.version>3.10.1</plugin.compiler.version>
+        <plugin.gpg.version>3.0.1</plugin.gpg.version>
+        <plugin.javadoc.version>3.5.0</plugin.javadoc.version>
+        <plugin.release.version>2.5.3</plugin.release.version>
+        <plugin.source.version>3.2.1</plugin.source.version>
+        <plugin.surefire.version>2.22.2</plugin.surefire.version>
     </properties>
 
     <dependencyManagement>
@@ -69,7 +69,7 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>${spring-boot.version}</version>
+                <version>${dependency.spring-boot.version}</version>
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
@@ -77,22 +77,22 @@
             <dependency>
                 <groupId>de.vinado.library</groupId>
                 <artifactId>identifier-api</artifactId>
-                <version>${identifier.version}</version>
+                <version>${dependency.identifier.version}</version>
             </dependency>
             <dependency>
                 <groupId>de.vinado.library</groupId>
                 <artifactId>identifier-jackson</artifactId>
-                <version>${identifier.version}</version>
+                <version>${dependency.identifier.version}</version>
             </dependency>
             <dependency>
                 <groupId>de.vinado.spring</groupId>
                 <artifactId>identifier-convert</artifactId>
-                <version>${identifier.version}</version>
+                <version>${dependency.identifier.version}</version>
             </dependency>
             <dependency>
                 <groupId>de.vinado.boot</groupId>
                 <artifactId>identifier-spring-boot-autoconfigure</artifactId>
-                <version>${identifier.version}</version>
+                <version>${dependency.identifier.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -116,7 +116,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>${maven-compiler-plugin.version}</version>
+                <version>${plugin.compiler.version}</version>
                 <configuration>
                     <parameters>true</parameters>
                 </configuration>
@@ -124,12 +124,12 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>${maven-surefire-plugin.version}</version>
+                <version>${plugin.surefire.version}</version>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
-                <version>${maven-checkstyle-plugin.version}</version>
+                <version>${plugin.checkstyle.version}</version>
                 <dependencies>
                     <dependency>
                         <groupId>com.puppycrawl.tools</groupId>
@@ -166,7 +166,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
-                <version>${maven-source-plugin.version}</version>
+                <version>${plugin.source.version}</version>
                 <executions>
                     <execution>
                         <id>attach-sources</id>
@@ -179,7 +179,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
-                <version>${maven-javadoc-plugin.version}</version>
+                <version>${plugin.javadoc.version}</version>
                 <configuration>
                     <links>
                         <link>https://docs.spring.io/spring-framework/docs/6.0.2/javadoc-api/</link>
@@ -197,7 +197,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
-                <version>${maven-release-plugin.version}</version>
+                <version>${plugin.release.version}</version>
                 <configuration>
                     <goals>deploy</goals>
                     <mavenExecutorId>forked-path</mavenExecutorId>
@@ -222,7 +222,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
-                        <version>${maven-gpg-plugin.version}</version>
+                        <version>${plugin.gpg.version}</version>
                         <executions>
                             <execution>
                                 <id>sign-artifacts</id>
