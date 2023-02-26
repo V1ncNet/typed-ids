@@ -4,9 +4,6 @@ import de.vinado.library.identifier.Identifier;
 import de.vinado.library.identifier.basic.StringIdentifier;
 import de.vinado.library.identifier.jackson.AbstractIdentifierDeserializationTest;
 
-/**
- * @author Vincent Nadoll
- */
 class StringIdentifierDeserializationTest extends AbstractIdentifierDeserializationTest {
 
     @Override

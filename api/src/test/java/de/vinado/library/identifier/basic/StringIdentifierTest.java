@@ -5,9 +5,6 @@ import de.vinado.library.identifier.Identifier;
 import de.vinado.library.identifier.IdentifierFactory;
 import org.junit.jupiter.api.BeforeAll;
 
-/**
- * @author Vincent Nadoll
- */
 class StringIdentifierTest extends AbstractIdentifierTest<String> {
 
     private static IdentifierFactory<String, ? extends Identifier<String>> factory;

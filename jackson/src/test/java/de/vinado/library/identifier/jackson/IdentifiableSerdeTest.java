@@ -12,9 +12,6 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-/**
- * @author Vincent Nadoll
- */
 class IdentifiableSerdeTest {
 
     private static ObjectMapper mapper;

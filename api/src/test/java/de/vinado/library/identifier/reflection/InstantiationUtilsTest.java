@@ -15,9 +15,6 @@ import static de.vinado.library.identifier.reflection.InstantiationUtils.instant
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-/**
- * @author Vincent Nadoll
- */
 class InstantiationUtilsTest {
 
     @Test

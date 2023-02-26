@@ -7,9 +7,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-/**
- * @author Vincent Nadoll
- */
 public abstract class AbstractIdentifierTest<T> {
 
     private Identifier<T> a;

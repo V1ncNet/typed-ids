@@ -4,9 +4,6 @@ import de.vinado.library.identifier.AbstractIdentifierTest;
 import de.vinado.library.identifier.Identifier;
 import org.junit.jupiter.api.BeforeAll;
 
-/**
- * @author Vincent Nadoll
- */
 class NumericIdentifierTest extends AbstractIdentifierTest<Long> {
 
     private static NumericIdentifierFactory<? extends NumericIdentifier> factory;

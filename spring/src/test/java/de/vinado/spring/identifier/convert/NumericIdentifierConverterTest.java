@@ -18,9 +18,6 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.params.provider.Arguments.arguments;
 
-/**
- * @author Vincent Nadoll
- */
 class NumericIdentifierConverterTest {
 
     private NumericIdentifierConverter converter;
