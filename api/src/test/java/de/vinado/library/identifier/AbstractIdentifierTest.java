@@ -9,8 +9,8 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public abstract class AbstractIdentifierTest<T> {
 
-    private Identifier<T> a;
-    private Identifier<T> b;
+    private Identifier<T> identifier0;
+    private Identifier<T> identifier1;
 
     protected abstract T createValueA();
 
@@ -20,8 +20,8 @@ public abstract class AbstractIdentifierTest<T> {
 
     @BeforeEach
     void setUp() {
-        a = create(createValueA());
-        b = create(createValueB());
+        identifier0 = create(createValueA());
+        identifier1 = create(createValueB());
     }
 
     @Test
@@ -42,27 +42,27 @@ public abstract class AbstractIdentifierTest<T> {
     void testingEquality_shouldCompareValues() {
         Identifier<T> other = create(createValueA());
 
-        assertEquals(a, a);
-        assertEquals(a, other);
-        assertNotEquals(b, other);
-        assertNotEquals(a, new Object());
-        assertNotEquals(a, null);
-        assertNotEquals(null, a);
+        assertEquals(identifier0, identifier0);
+        assertEquals(identifier0, other);
+        assertNotEquals(identifier1, other);
+        assertNotEquals(identifier0, new Object());
+        assertNotEquals(identifier0, null);
+        assertNotEquals(null, identifier0);
     }
 
     @Test
     void hashingId_shouldDelegateToValueHashCode() {
         T expected = createValueA();
 
-        assertEquals(expected.hashCode(), a.hashCode());
-        assertNotEquals(expected.hashCode(), b.hashCode());
+        assertEquals(expected.hashCode(), identifier0.hashCode());
+        assertNotEquals(expected.hashCode(), identifier1.hashCode());
     }
 
     @Test
     void compareTo_shouldCompareValue() {
         Identifier<T> other = create(createValueA());
 
-        assertEquals(0, a.compareTo(other));
-        assertNotEquals(0, b.compareTo(other));
+        assertEquals(0, identifier0.compareTo(other));
+        assertNotEquals(0, identifier1.compareTo(other));
     }
 }
