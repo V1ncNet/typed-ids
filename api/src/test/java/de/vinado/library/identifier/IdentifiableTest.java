@@ -12,9 +12,6 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-/**
- * @author Vincent Nadoll
- */
 class IdentifiableTest {
 
     private Id id;

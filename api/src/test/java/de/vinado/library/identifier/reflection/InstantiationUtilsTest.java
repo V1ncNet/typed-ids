@@ -15,9 +15,6 @@ import static de.vinado.library.identifier.reflection.InstantiationUtils.instant
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-/**
- * @author Vincent Nadoll
- */
 class InstantiationUtilsTest {
 
     @Test
@@ -36,14 +33,16 @@ class InstantiationUtilsTest {
 
     @Test
     void instantiatingConstrained_shouldThrowException() throws NoSuchMethodException {
-        Constructor<ConstrainedIdentifier> constructor = ConstrainedIdentifier.class.getDeclaredConstructor(String.class);
+        Constructor<ConstrainedIdentifier> constructor =
+            ConstrainedIdentifier.class.getDeclaredConstructor(String.class);
 
         assertThrows(IdentifierInstantiationException.class, () -> instantiate(constructor, "1"));
     }
 
     @Test
     void instantiatingIdentifier_shouldThrowException() throws NoSuchMethodException {
-        Constructor<AbstractStringIdentifier> constructor = AbstractStringIdentifier.class.getDeclaredConstructor(String.class);
+        Constructor<AbstractStringIdentifier> constructor =
+            AbstractStringIdentifier.class.getDeclaredConstructor(String.class);
 
         assertThrows(IdentifierInstantiationException.class, () -> instantiate(constructor, "foo"));
     }
@@ -71,7 +70,7 @@ class InstantiationUtilsTest {
     }
 
 
-    private static abstract class AbstractStringIdentifier extends Identifier<String> {
+    private abstract static class AbstractStringIdentifier extends Identifier<String> {
 
         private static final long serialVersionUID = 3110357809026800341L;
 

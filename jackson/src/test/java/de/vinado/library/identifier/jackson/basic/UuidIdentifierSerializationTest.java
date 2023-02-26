@@ -7,9 +7,6 @@ import de.vinado.library.identifier.jackson.AbstractIdentifierSerializationTest;
 
 import java.util.UUID;
 
-/**
- * @author Vincent Nadoll
- */
 class UuidIdentifierSerializationTest extends AbstractIdentifierSerializationTest<UUID> {
 
     private static final IdentifierFactory<UUID, UuidIdentifier> FACTORY = UuidIdentifier::new;

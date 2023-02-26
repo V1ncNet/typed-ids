@@ -8,9 +8,6 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-/**
- * @author Vincent Nadoll
- */
 public abstract class AbstractIdentifierSerializationTest<T> {
 
     private static ObjectMapper mapper;

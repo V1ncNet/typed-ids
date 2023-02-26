@@ -7,9 +7,6 @@ import org.junit.jupiter.api.BeforeAll;
 
 import java.util.UUID;
 
-/**
- * @author Vincent Nadoll
- */
 class UuidIdentifierTest extends AbstractIdentifierTest<UUID> {
 
     private static IdentifierFactory<UUID, ? extends Identifier<UUID>> factory;

@@ -5,9 +5,6 @@ import de.vinado.library.identifier.IdentifierFactory;
 import de.vinado.library.identifier.basic.StringIdentifier;
 import de.vinado.library.identifier.jackson.AbstractIdentifierSerializationTest;
 
-/**
- * @author Vincent Nadoll
- */
 class StringIdentifierSerializationTest extends AbstractIdentifierSerializationTest<String> {
 
     private static final IdentifierFactory<String, StringIdentifier> FACTORY = StringIdentifier::new;

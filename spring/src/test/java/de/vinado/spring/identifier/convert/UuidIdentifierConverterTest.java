@@ -19,9 +19,6 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.params.provider.Arguments.arguments;
 
-/**
- * @author Vincent Nadoll
- */
 class UuidIdentifierConverterTest {
 
     private UuidIdentifierConverter converter;
@@ -43,11 +40,13 @@ class UuidIdentifierConverterTest {
         assertThrows(ConverterNotFoundException.class, () -> converter.convert(1, sourceType, targetType));
     }
 
+    // CHECKSTYLE.OFF: LineLength
     @Test
     void convertUnknownSource_shouldThrowException() {
         assertThrows(ConverterNotFoundException.class, () -> converter.convert(UUID.randomUUID(), STRING_TYPE, IDENTIFIER_TYPE));
         assertThrows(ConverterNotFoundException.class, () -> converter.convert("foo", UUID_TYPE, IDENTIFIER_TYPE));
     }
+    // CHECKSTYLE.ON: LineLength
 
     @Test
     void converter_shouldConvertOneWays() {

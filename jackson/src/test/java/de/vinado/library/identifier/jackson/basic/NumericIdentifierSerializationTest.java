@@ -7,9 +7,6 @@ import de.vinado.library.identifier.jackson.AbstractIdentifierSerializationTest;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-/**
- * @author Vincent Nadoll
- */
 class NumericIdentifierSerializationTest extends AbstractIdentifierSerializationTest<Long> {
 
     private static final IdentifierFactory<Long, NumericIdentifier> FACTORY = NumericIdentifier::new;

@@ -14,9 +14,6 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-/**
- * @author Vincent Nadoll
- */
 class StringIdentifierConverterTest {
 
     private StringIdentifierConverter converter;
@@ -38,7 +35,8 @@ class StringIdentifierConverterTest {
 
     @Test
     void convertingUnknownType_shouldThrowException() {
-        assertThrows(ConverterNotFoundException.class, () -> converter.convert("foo", TypeDescriptor.valueOf(UUID.class), IDENTIFIER_TYPE));
+        assertThrows(ConverterNotFoundException.class, () ->
+            converter.convert("foo", TypeDescriptor.valueOf(UUID.class), IDENTIFIER_TYPE));
     }
 
     @Test
