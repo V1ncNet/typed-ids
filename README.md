@@ -68,7 +68,7 @@ may be implemented by any domain entities.
 
 ```xml
 <dependency>
-    <groupId>de.vinado.library</groupId>
+    <groupId>de.vinado.lib</groupId>
     <artifactId>identifier-api</artifactId>
     <version>1.0.1</version>
 </dependency>
@@ -106,7 +106,7 @@ public final class Id extends UuidIdentifier {
 
 ```xml
 <dependency>
-    <groupId>de.vinado.library</groupId>
+    <groupId>de.vinado.lib</groupId>
     <artifactId>identifier-jackson</artifactId>
     <version>1.0.1</version>
 </dependency>
