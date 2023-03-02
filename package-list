@@ -1,7 +1,0 @@
-de.vinado.boot.autoconfigure.identifier
-de.vinado.library.identifier
-de.vinado.library.identifier.basic
-de.vinado.library.identifier.jackson
-de.vinado.library.identifier.jackson.basic
-de.vinado.library.identifier.reflection
-de.vinado.spring.identifier.convert
