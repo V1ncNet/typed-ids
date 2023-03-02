@@ -26,7 +26,7 @@ public class IdentifierModule extends SimpleModule {
     private static final long serialVersionUID = -1818622609743081303L;
 
     public static final Version VERSION = VersionUtil.parseVersion(
-        "1.0.1", "de.vinado.lib", "identifier-jackson"
+        "2.0.0", "de.vinado.lib", "identifier-jackson"
     );
 
     public IdentifierModule() {

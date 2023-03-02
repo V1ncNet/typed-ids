@@ -70,7 +70,7 @@ may be implemented by any domain entities.
 <dependency>
     <groupId>de.vinado.lib</groupId>
     <artifactId>identifier-api</artifactId>
-    <version>1.0.1</version>
+    <version>2.0.0</version>
 </dependency>
 ```
 
@@ -108,7 +108,7 @@ public final class Id extends UuidIdentifier {
 <dependency>
     <groupId>de.vinado.lib</groupId>
     <artifactId>identifier-jackson</artifactId>
-    <version>1.0.1</version>
+    <version>2.0.0</version>
 </dependency>
 
 <dependency>
@@ -142,7 +142,7 @@ type the identifier encapsulates.
 <dependency>
     <groupId>de.vinado.spring</groupId>
     <artifactId>identifier-convert</artifactId>
-    <version>1.0.1</version>
+    <version>2.0.0</version>
 </dependency>
 
 <dependency>
@@ -161,7 +161,7 @@ application you may want to use the zero-conf Spring Boot Starter.
 <dependency>
     <groupId>de.vinado.boot</groupId>
     <artifactId>identifier-spring-boot-starter</artifactId>
-    <version>1.0.1</version>
+    <version>2.0.0</version>
 </dependency>
 ```
 
