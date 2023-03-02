@@ -1,7 +1,7 @@
 package de.vinado.boot.autoconfigure.identifier;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import de.vinado.library.identifier.jackson.IdentifierModule;
+import de.vinado.lib.identifier.jackson.IdentifierModule;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.jackson.Jackson2ObjectMapperBuilderCustomizer;

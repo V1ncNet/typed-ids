@@ -1,8 +1,8 @@
 package de.vinado.spring.identifier.convert;
 
-import de.vinado.library.identifier.basic.NumericIdentifier;
-import de.vinado.library.identifier.basic.StringIdentifier;
-import de.vinado.library.identifier.reflection.IdentifierInstantiationException;
+import de.vinado.lib.identifier.basic.NumericIdentifier;
+import de.vinado.lib.identifier.basic.StringIdentifier;
+import de.vinado.lib.identifier.reflection.IdentifierInstantiationException;
 import org.springframework.core.convert.ConversionFailedException;
 import org.springframework.core.convert.ConverterNotFoundException;
 import org.springframework.core.convert.TypeDescriptor;
@@ -16,7 +16,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import static de.vinado.library.identifier.reflection.InstantiationUtils.instantiate;
+import static de.vinado.lib.identifier.reflection.InstantiationUtils.instantiate;
 
 /**
  * {@link ReadingConverter} wrapping a string value into a new instance of {@link StringIdentifier}.
@@ -65,9 +65,9 @@ public class NumericIdentifierConverter implements ConditionalGenericConverter {
             Constructor<?> constructor = ReflectionUtils.accessibleConstructor(targetClass, Long.class);
             return (NumericIdentifier) instantiate(constructor, from(source, sourceType, targetType));
         } catch (NoSuchMethodException
-            | SecurityException
-            | IllegalArgumentException
-            | IdentifierInstantiationException e) {
+                 | SecurityException
+                 | IllegalArgumentException
+                 | IdentifierInstantiationException e) {
             throw new ConversionFailedException(TypeDescriptor.forObject(source), targetType, source, e);
         }
     }

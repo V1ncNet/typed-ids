@@ -1,8 +1,8 @@
 package de.vinado.spring.identifier.convert;
 
-import de.vinado.library.identifier.basic.UuidIdentifier;
-import de.vinado.library.identifier.reflection.IdentifierInstantiationException;
-import de.vinado.library.identifier.reflection.InstantiationUtils;
+import de.vinado.lib.identifier.basic.UuidIdentifier;
+import de.vinado.lib.identifier.reflection.IdentifierInstantiationException;
+import de.vinado.lib.identifier.reflection.InstantiationUtils;
 import org.springframework.core.convert.ConversionFailedException;
 import org.springframework.core.convert.ConverterNotFoundException;
 import org.springframework.core.convert.TypeDescriptor;
@@ -61,9 +61,9 @@ public class UuidIdentifierConverter implements ConditionalGenericConverter {
             Constructor<?> constructor = ReflectionUtils.accessibleConstructor(targetClass, UUID.class);
             return (UuidIdentifier) InstantiationUtils.instantiate(constructor, from(source, sourceType, targetType));
         } catch (NoSuchMethodException
-            | SecurityException
-            | IllegalArgumentException
-            | IdentifierInstantiationException e) {
+                 | SecurityException
+                 | IllegalArgumentException
+                 | IdentifierInstantiationException e) {
             throw new ConversionFailedException(TypeDescriptor.forObject(source), targetType, source, e);
         }
     }
