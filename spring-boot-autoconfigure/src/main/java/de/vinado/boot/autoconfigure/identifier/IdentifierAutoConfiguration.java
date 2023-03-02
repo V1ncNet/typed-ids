@@ -1,6 +1,6 @@
 package de.vinado.boot.autoconfigure.identifier;
 
-import org.springframework.context.annotation.Configuration;
+import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.context.annotation.Import;
 
 /**
@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Import;
  * @see IdentifierWebMvcConfiguration
  * @see IdentifierJacksonConfiguration
  */
-@Configuration(proxyBeanMethods = false)
+@AutoConfiguration
 @Import({IdentifierWebMvcConfiguration.class, IdentifierJacksonConfiguration.class})
 public class IdentifierAutoConfiguration {
 }

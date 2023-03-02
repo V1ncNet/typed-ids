@@ -1,5 +1,0 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  de.vinado.boot.autoconfigure.identifier.IdentifierAutoConfiguration
-
-org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc=\
-  de.vinado.boot.autoconfigure.identifier.IdentifierAutoConfiguration

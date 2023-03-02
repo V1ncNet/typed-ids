@@ -8,9 +8,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-/**
- * @author Vincent Nadoll
- */
 class IdentifierWebMvcConfigurationTest {
 
     private ApplicationContextRunner contextRunner;

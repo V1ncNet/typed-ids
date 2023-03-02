@@ -10,9 +10,6 @@ import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-/**
- * @author Vincent Nadoll
- */
 class IdentifierJacksonConfigurationTest {
 
     private ApplicationContextRunner contextRunner;
