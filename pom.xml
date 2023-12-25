@@ -7,7 +7,7 @@
     <groupId>de.vinado.lib</groupId>
     <artifactId>identifier-parent</artifactId>
     <packaging>pom</packaging>
-    <version>2.0.0</version>
+    <version>2.0.1</version>
 
     <name>Identifier Parent</name>
     <description>Parent POM providing dependency management for strong typed identifiers</description>
@@ -53,7 +53,7 @@
         <skipCheckstyle>false</skipCheckstyle>
 
         <dependency.checkstyle.version>10.7.0</dependency.checkstyle.version>
-        <dependency.identifier.version>2.0.0</dependency.identifier.version>
+        <dependency.identifier.version>2.0.1</dependency.identifier.version>
         <dependency.spring-boot.version>3.0.0</dependency.spring-boot.version>
 
         <plugin.checkstyle.version>3.2.1</plugin.checkstyle.version>
